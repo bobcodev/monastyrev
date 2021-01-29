@@ -1,0 +1,80 @@
+.catalog-menu
+
+    .catalog-menu__header
+        .catalog-menu__header-img
+            img(src='assets/icons/bag.svg', alt='Каталог товаров')
+        .catalog-menu__header-text
+            .catalog-menu__header-name Каталог
+            .catalog-menu__header-arrow
+                img(src='assets/icons/arrow-menu.svg', alt='Открыть')
+        button.catalog-menu__header-close(typr='#')
+            img(src='assets/icons/close.svg', alt='Закрыть меню')
+
+    .catalog-menu__header-line
+
+    .catalog-menu__tabs
+        .catalog-menu__tabs-categories категории
+        .catalog-menu__tabs-brands бренд
+        
+    .catalog-menu__items
+        a(class='catalog-menu__item', href='#')
+            .catalog-menu__item-base
+                .catalog-menu__item-img
+                    img(src='assets/icons/medicines.svg', alt='Аптечные товары')
+                .catalog-menu__item-text Аптечные товары
+                img(class='catalog-menu__item-arrow catalog-menu__item-arrow_active', src='assets/icons/arrow-menu.svg', alt='#')
+            img(class='catalog-menu__item-arrow-right', src='assets/icons/arrow-menu_right.svg', alt='#')
+
+        include catalog-menu-sub.pug
+
+        a(class='catalog-menu__item', href='#')
+            .catalog-menu__item-base
+                .catalog-menu__item-img
+                    img(src='assets/icons/cosmetics.svg', alt='Косметика')
+                .catalog-menu__item-text Косметика
+                img(class='catalog-menu__item-arrow', src='assets/icons/arrow-menu.svg', alt='#')
+            img(class='catalog-menu__item-arrow-right', src='assets/icons/arrow-menu_right.svg', alt='#')
+        a(class='catalog-menu__item', href='#')
+            .catalog-menu__item-base
+                .catalog-menu__item-img
+                    img(src='assets/icons/food.svg', alt='Здоровое питание')
+                .catalog-menu__item-text Здоровое питание
+                img(class='catalog-menu__item-arrow', src='assets/icons/arrow-menu.svg', alt='#')
+            img(class='catalog-menu__item-arrow-right', src='assets/icons/arrow-menu_right.svg', alt='#')
+        a(class='catalog-menu__item', href='#')
+            .catalog-menu__item-base
+                .catalog-menu__item-img
+                    img(src='assets/icons/family.svg', alt='Для дома и семьи')
+                .catalog-menu__item-text Для дома и семьи
+                img(class='catalog-menu__item-arrow', src='assets/icons/arrow-menu.svg', alt='#')
+            img(class='catalog-menu__item-arrow-right', src='assets/icons/arrow-menu_right.svg', alt='#')
+        a(class='catalog-menu__item', href='#')
+            .catalog-menu__item-base
+                .catalog-menu__item-img
+                    img(src='assets/icons/baby.svg', alt='Мама и малыш')
+                .catalog-menu__item-text Мама и малыш
+                img(class='catalog-menu__item-arrow', src='assets/icons/arrow-menu.svg', alt='#')
+            img(class='catalog-menu__item-arrow-right', src='assets/icons/arrow-menu_right.svg', alt='#')
+        a(class='catalog-menu__item', href='#')
+            .catalog-menu__item-base
+                .catalog-menu__item-img
+                    img(src='assets/icons/optics.svg', alt='Оптика')
+                .catalog-menu__item-text Оптика
+                img(class='catalog-menu__item-arrow', src='assets/icons/arrow-menu.svg', alt='#')
+            img(class='catalog-menu__item-arrow-right', src='assets/icons/arrow-menu_right.svg', alt='#')
+        a(class='catalog-menu__item', href='#')
+            .catalog-menu__item-base
+                .catalog-menu__item-img
+                    img(src='assets/icons/devices.svg', alt='Медицинские приборы')
+                .catalog-menu__item-text Медицинские приборы
+                img(class='catalog-menu__item-arrow', src='assets/icons/arrow-menu.svg', alt='#')
+            img(class='catalog-menu__item-arrow-right', src='assets/icons/arrow-menu_right.svg', alt='#')
+        a(class='catalog-menu__item', href='#')
+            .catalog-menu__item-base
+                .catalog-menu__item-img
+                    img(src='assets/icons/promo.svg', alt='Скидки')
+                .catalog-menu__item-text Скидки
+                img(class='catalog-menu__item-arrow', src='assets/icons/arrow-menu.svg', alt='#')
+            img(class='catalog-menu__item-arrow-right', src='assets/icons/arrow-menu_right.svg', alt='#')
+        
+    include catalog-menu-mob.pug

@@ -1,0 +1,29 @@
+doctype html
+html(lang="ru")
+
+    include global/head.pug
+
+    body
+
+        include global/header.pug
+
+        .container
+        
+            .banner.banner__index
+                .banner__arrows
+                    img.arrow.arrow_left(src='assets/icons/arrow-white_right.svg', alt='Влево')
+                    img.arrow.arrow_right(src='assets/icons/arrow-white_right.svg', alt='Вправо')
+                .banner__arrows-bg
+                    .banner__arrows-bg-item
+                    .banner__arrows-bg-item                   
+                .banner__btns
+                    a(class='btn btn__white', href='#') Подробнее
+                    .pagination.banner__pagination
+                        button.pagination__circle.pagination__circle_active(type='#')
+                        button.pagination__circle(type='#')
+                        button.pagination__circle(type='#')
+                        button.pagination__circle(type='#')
+                        button.pagination__circle(type='#')
+
+            include global/catalog-menu.pug
+            include global/catalog-menu-sub2.pug

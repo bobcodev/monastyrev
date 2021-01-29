@@ -1,0 +1,22 @@
+.pagination
+    display: flex
+    justify-content: center
+    align-items: center
+    &__circle
+        width: 7px
+        height: 7px
+        border-radius: 50%
+        background: #ffffff
+        opacity: 0.4
+        margin-left: 6px
+        &:first-child
+            margin-left: 0
+        &:hover
+            opacity: 0.65
+
+        &_active
+            width: 10px
+            height: 10px
+            opacity: 1
+            &:hover
+                background-color: $gray-maxilight-color
